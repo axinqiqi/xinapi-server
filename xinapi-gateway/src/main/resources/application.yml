@@ -1,0 +1,25 @@
+server:
+  port: 8121
+
+spring:
+  profiles:
+    active: prod
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      routes:
+        - id: xinapi_backend_route
+          # TODO:根据服务名进行路由转发
+#          uri: lb://xinapi-backend
+          uri: http://localhost:8111
+          predicates:
+            - Path=/api/**
+      default-filters:
+        - AddResponseHeader=source, axin
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: trace

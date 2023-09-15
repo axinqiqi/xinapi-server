@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xin.project.mapper.OrderMapper">
+
+    <resultMap id="BaseResultMap" type="com.xin.xinapicommon.model.entity.Order">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <id property="isDelete" column="isDelete" jdbcType="INTEGER"/>
+            <result property="userId" column="userId" jdbcType="BIGINT"/>
+            <result property="interfaceId" column="interfaceId" jdbcType="BIGINT"/>
+            <result property="count" column="count" jdbcType="INTEGER"/>
+            <result property="totalAmount" column="totalAmount" jdbcType="DECIMAL"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="orderSn" column="orderSn" jdbcType="VARCHAR"/>
+            <result property="charging" column="charging" jdbcType="FLOAT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,isDelete,userId,
+        interfaceId,count,totalAmount,
+        status,createTime,updateTime,
+        orderSn,charging
+    </sql>
+
+    <select id="listTopBuyInterfaceInfo" resultType="com.xin.xinapicommon.model.entity.Order">
+        select interfaceId , SUM(`count`) as `count` from t_order
+        GROUP BY interfaceId
+        ORDER BY `count` desc
+            limit #{num}
+    </select>
+
+</mapper>

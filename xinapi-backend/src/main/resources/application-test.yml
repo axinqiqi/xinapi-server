@@ -1,0 +1,43 @@
+# 测试配置文件
+# @author <a href="https://github.com/liyupi">程序员鱼皮</a>
+# @from <a href="https://yupi.icu">编程导航知识星球</a>
+server:
+  port: 8101
+spring:
+  application:
+    name: xinapi-backend
+    cloud:
+      nacos:
+        discovery:
+          server-addr: 127.0.0.1:8848
+  # 数据库配置
+  # todo 需替换配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/xinapi
+    username: root
+    password: 1874
+  # Redis 配置
+  # todo 需替换配置
+  redis:
+    database: 1
+    host: localhost
+    port: 6379
+    timeout: 5000
+    password: 123456
+  # Elasticsearch 配置
+  # todo 需替换配置
+  elasticsearch:
+    uris: http://localhost:9200
+    username: root
+    password: 123456
+
+dubbo:
+  application:
+    name: xinapi-backend
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: xinapi-backend
+    address: nacos://localhost:8848

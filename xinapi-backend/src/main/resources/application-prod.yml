@@ -1,0 +1,46 @@
+# 线上配置文件
+# @author <a href="https://github.com/liyupi">程序员鱼皮</a>
+# @from <a href="https://yupi.icu">编程导航知识星球</a>
+server:
+  port: 8101
+spring:
+  application:
+    name: xinapi-backend
+    cloud:
+      nacos:
+        discovery:
+          server-addr: 192.168.0.144:8848
+  # 数据库配置
+  # todo 需替换配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://139.159.192.124:3301/xinapi
+    username: root
+    password: Youshixin1874#3
+  # Redis 配置
+  redis:
+    database: 1
+    host: 139.159.192.124
+    port: 6379
+    timeout: 5000
+    password: Youshixin
+  # Elasticsearch 配置
+  # todo 需替换配置
+  elasticsearch:
+    uris: http://localhost:9200
+    username: root
+    password: 123456
+mybatis-plus:
+  configuration:
+    # 生产环境关闭日志
+    log-impl: ''
+
+dubbo:
+  application:
+    name: xinapi-backend
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: xinapi-backend
+    address: nacos://192.168.0.144:8848

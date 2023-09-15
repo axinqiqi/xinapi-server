@@ -1,0 +1,17 @@
+server:
+  port: 8111
+  servlet:
+    context-path: /api/interface
+spring:
+  application:
+    name: xinapi-interface
+  #注册中心和配置中心的配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+xinapi:
+  client:
+    access-key: c41995df3da2a59c21fa70dc2fafa363
+    secret-key: 23c4830fad46c9e89501b139162e7663

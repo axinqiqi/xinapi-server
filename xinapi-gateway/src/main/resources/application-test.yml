@@ -1,0 +1,10 @@
+# 测试配置文件
+dubbo:
+  application:
+    name: xinapi-gateway
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: xinapi-gateway
+    address: nacos://localhost:8848

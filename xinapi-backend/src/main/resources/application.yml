@@ -1,0 +1,96 @@
+# 公共配置文件
+# @author <a href="https://github.com/liyupi">程序员鱼皮</a>
+# @from <a href="https://yupi.icu">编程导航知识星球</a>
+spring:
+  # 默认 dev 环境
+  profiles:
+    active: prod
+  # 支持 swagger3
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  # session 配置
+  session:
+    # todo 取消注释开启分布式 session（须先配置 Redis）
+    store-type: redis
+    # 30 天过期
+    timeout: 2592000
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: root
+    password: root
+    virtualHost: /
+  # Elasticsearch 配置
+  # todo 需替换配置，然后取消注释
+#  elasticsearch:
+#    uris: http://localhost:9200
+#    username: root
+#    password: 123456
+  # 文件上传
+  servlet:
+    multipart:
+      # 大小限制
+      max-file-size: 10MB
+server:
+  address: 0.0.0.0
+  port: 8101
+  servlet:
+    context-path: /api
+    # cookie 30 天过期
+    session:
+      cookie:
+        max-age: 2592000
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: isDelete # 全局逻辑删除的实体字段名
+      logic-delete-value: 1 # 逻辑已删除值（默认为 1）
+      logic-not-delete-value: 0 # 逻辑未删除值（默认为 0）
+# 微信相关
+wx:
+  # 微信公众平台
+  # todo 需替换配置
+  mp:
+    token: xxx
+    aesKey: xxx
+    appId: xxx
+    secret: xxx
+    config-storage:
+      http-client-type: HttpClient
+      key-prefix: wx
+      redis:
+        host: 127.0.0.1
+        port: 6379
+      type: Memory
+  # 微信开放平台
+  # todo 需替换配置
+  open:
+    appId: xxx
+    appSecret: xxx
+# 对象存储
+# todo 需替换配置
+cos:
+  client:
+    accessKey: xxx
+    secretKey: xxx
+    region: xxx
+    bucket: xxx
+
+xinapi:
+  client:
+    access-key: c41995df3da2a59c21fa70dc2fafa363
+    secret-key: 23c4830fad46c9e89501b139162e7663
+
+alipay:
+  appId: 9021000126627664
+  privateKey: MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC1vo/Y613hOmbRMsBdVyFBEa4mJw2OxYI93TnnnB+eH82cftTqqQYlwgLpH/hSHWBORdtrqRIZg1MdXfJhY6P2ca0INSewpM6EWuAmB3/5oBNw5aYW3jnBC4wd3atz1yhhpsR+V49WC6CSTmhBLNDtAj+dsMLy0/uN9Pk3CzuZQXCJQyjC9Gzc1NuTsg4iYV22rAeyNzyo7ucJUT57DvTdPLuq+dq3d8zwZVj1BoJvZgMyWP1C1qfp2j0dy1xsVQRaRoHRfJ2Z4HlrxQ30F8rF/2Y2HmtWY9iJY4GivK5fV2/gXhvuT7RsB+kPW831vv1IpXn6GRxKsXbPtuCIfd1jAgMBAAECggEAJMh8tJpuVbdMN+rdpAaOZGz/ohklVVAEHCE6JvYiMA6fvpys2xF6fQnXLPebeoMXir/4uMFvOFqr57Wr6KoR9T7slkyry8SPR5pc41WBQTR0utS/2MEBT2DW6vSCTt+s/JaUDj4KdI/F39aeoxI+9rkNxwyPaDYfI4wBJHLRjSKplgpxm2GAqZW6GZM1sJA7WggUuLbDf2kbz8/P8jJE4Oht0rkzVKS24oxQ4sRf+6gvgTcSOGZe1jrfq6C3p/b/Yd4n5PpqMnfb7qxtelcaekmSE1kfsVtwRN2hI8irAlscolNBS8u/6dfC5mpd6nW9mYvWFGlul7SY5jitdFWsAQKBgQDxb94A95QAkEc8oKWl6/fTtiHDPfNGkURclomZwsxFzVuZRlJBhUeTCA3mYAMlxjjab6Wv1tS5xTWAm4JlUWP9gxs4HrqaTCog5pmym6JoOWOGSOKyyLv1O0wAO6UNT+H09Rnn3rAXOke1qqnrkXIMcHxa7GMN+J1AD4cRnLRs4QKBgQDAtPSaP7yGBlS6wWH14a9oc/eb1LM0Wh/6rna9sbuZYmHuTG6pS6n7Y35KdHyrZ9xYcaqW7YpIYUpzgVni3YPgYKKbeKhl323Oqq6sbkuaao/mx6bRXURrypTDxMer9vHyyP25ytEbFEQfqjqaCb/4RPypFb/hNoifOiJ1bM6uwwKBgEmcDraCxSfq1R1B6V8N83AjzmVlZN91+L610twDTR5W/v9bNkbtqKXGRd6gFTWWGs1WTtCukgrVentsbjQPvYmUSF8y1zel0w5W4DNZSgm2vYY6gIt7sfqRipljle3aFg0GEVDlTxC13xkfIFFG9dufC/r4qTagPulCEq8m9MdhAoGBAIFF4wDG2PUfsh9GMyz7JOxxPx2uZjksbF+CQe2nGS4gLYnqhCHVvEYDzGiuFCP4HHzIY6Oz3hwICCXMFDx4VUtkCDE7k9wjMkp9fYf2xYjlC3vJW0L/yjJ1R668hyX5Fv3Dj1HfmL8NrVWAoKdM+xbVUJktGfc+2g/Ws98KCux5AoGAYY8mQ7tGQU7SLRPRA6sDIO/5DNh/RM1MHBDqgD41BE95U3meCXbQvXVzANxrcsrJyc+W8bZd0zzi2JvcO7nZacOKWcyyAJ0BybTZlRCV4kSAPTNxALS/ZQTnVuRzDLT69H8Drlau0T2QvS8GpiZclP/QpbeHfTCUh+RxxmE3bYE=
+  publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAodpgGbevbtiT2wO6I0t49if/gbMuGxD1qjg2uF6b+mT2ZXw7hJ4visYFVDeNjkZKKaEYt1+oX2OnheZmTAj24VdP6y2gdK3tL7yDXTf8XFq22SFfNtjYSM8tiIyMPg7i1jPZl+g64Qd24m0ZbCi5SrSWuuxnnJAJf6kc3DSsVMmRBcdmXSkEBQZeipiO+aayjU+ghT9fMKLVs/o2/AHEIhkUoqpkEaeIDV7AP1eXRa5hewIA1JTDmrNXs6yQ+58n74MqS3XEbNtlxYd20aWf7Z33mM2JD+55rrjSnBKhOlo9O9oxFmOUlxG9fF2zrFg4QU5WGfLTchN/ioEkWoYETwIDAQAB
+  notifyUrl: #
+  returnUrl: #
+  signType: RSA2
+  charset: UTF8
+  serverUrl: https://openapi-sandbox.dl.alipaydev.com/gateway.do
