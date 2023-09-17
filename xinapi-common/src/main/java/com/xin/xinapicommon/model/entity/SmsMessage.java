@@ -7,7 +7,8 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * 邮箱 && 手机短信消息对象
+ * 邮箱、手机短信消息对象
+ * @author youshixin
  */
 @Data
 @NoArgsConstructor

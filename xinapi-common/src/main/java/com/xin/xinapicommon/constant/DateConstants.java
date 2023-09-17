@@ -1,10 +1,9 @@
 package com.xin.xinapicommon.constant;
 
 /**
- * @Description DateConstants
- * @Author sjl
- * @Date 2022/6/13 11:16
- * @Version 1.0
+ * DateConstants
+ * @author youshixin
+ * 2022/6/13 11:16
  **/
 public interface DateConstants {
 

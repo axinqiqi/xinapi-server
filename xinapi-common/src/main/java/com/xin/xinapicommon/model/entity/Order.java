@@ -13,7 +13,6 @@ import java.util.Date;
 /**
  * 订单表
  *
- * @TableName t_order
  */
 @Data
 @TableName(value = "t_order")

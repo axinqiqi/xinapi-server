@@ -4,6 +4,7 @@ import cn.hutool.http.HttpRequest;
 
 /**
  * DouBanApiClient-DouBanApiClient
+ * @author youshixin
  */
 public class DouBanApiClient extends CommonApiClient{
 
@@ -13,7 +14,7 @@ public class DouBanApiClient extends CommonApiClient{
 
     /**
      * 获取豆瓣电影排行
-     * @return
+     * @return String
      */
     public String getMovieRankUrl(){
         return HttpRequest.get(GATEWAY_HOST+"/api/interface/douban/movieRank")

@@ -1,4 +1,4 @@
-package com.xin.xinapicommon.common;
+package com.xin.project.utils;
 
 import cn.hutool.core.util.StrUtil;
 import io.jsonwebtoken.Claims;
@@ -57,8 +57,8 @@ public class JwtUtils {
     /**
      * 判断token是否存在与有效
      *
-     * @param jwtToken
-     * @return
+     * @param jwtToken token
+     * @return boolean
      */
     public static boolean checkToken(String jwtToken) {
         if (StrUtil.isEmpty(jwtToken)) {
@@ -76,8 +76,8 @@ public class JwtUtils {
     /**
      * 根据token字符串获取token字符串中有效载荷部分的数据(有效载荷部分包含用户的数据)
      *
-     * @param request
-     * @return
+     * @param request http请求
+     * @return long
      */
     public static Long getUserIdByToken(HttpServletRequest request) {
         Cookie[] cookies = request.getCookies();

@@ -8,6 +8,7 @@ import java.util.Map;
 
 /**
  * 公共的API-SDK，抽取ak,sk并且封装生成签名的过程
+ * @author youshixin
  */
 public class CommonApiClient {
 
@@ -23,10 +24,10 @@ public class CommonApiClient {
 
     /**
      * 负责将数字签名的相关参数填入请求头中
-     * @param body
-     * @param accessKey
-     * @param secretKey
-     * @return
+     * @param body body
+     * @param accessKey accessKey
+     * @param secretKey secretKey
+     * @return map
      */
     protected Map<String, String> addHeaders(String body, String accessKey, String secretKey){
         Map<String, String> headers = new HashMap<>(8);

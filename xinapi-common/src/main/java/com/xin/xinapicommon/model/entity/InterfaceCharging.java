@@ -14,8 +14,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 
- * @TableName interface_charging
+ * interface_charging
  */
 @Data
 @TableName(value ="interface_charging")

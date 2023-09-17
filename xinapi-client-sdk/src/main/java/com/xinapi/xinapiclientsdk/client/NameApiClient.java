@@ -16,6 +16,11 @@ public class NameApiClient extends CommonApiClient {
         super(accessKey, secretKey);
     }
 
+    /**
+     * get方法获取name
+     * @param name name
+     * @return String
+     */
     public String getNameByGet(String name) {
         //可以单独传入http参数，这样参数会自动做URL编码，拼接在URL中
         HashMap<String, Object> paramMap = new HashMap<>(8);
@@ -24,7 +29,11 @@ public class NameApiClient extends CommonApiClient {
         return HttpUtil.get(GATEWAY_HOST + "/api/name", paramMap);
     }
 
-
+    /**
+     * post方法获取name
+     * @param user user
+     * @return String
+     */
     public String getNameByPost(User user) {
         String jsonStr = JSONUtil.toJsonStr(user);
 

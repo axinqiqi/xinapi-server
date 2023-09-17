@@ -4,6 +4,7 @@ import cn.hutool.http.HttpRequest;
 
 /**
  * DayController-DayApiClient
+ * @author youshixin
  */
 public class DayApiClient extends CommonApiClient{
 
@@ -13,7 +14,7 @@ public class DayApiClient extends CommonApiClient{
 
     /**
      * 获取每日壁纸
-     * @return
+     * @return String
      */
     public String getDayWallpaperUrl(){
         return HttpRequest.get(GATEWAY_HOST+"/api/interface/day/wallpaper")

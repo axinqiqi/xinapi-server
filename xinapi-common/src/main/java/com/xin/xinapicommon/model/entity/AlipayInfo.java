@@ -10,7 +10,6 @@ import java.util.Date;
 
 /**
  * 阿里支付信息表
- * @TableName alipay_info
  */
 @TableName(value ="alipay_info")
 @Data
