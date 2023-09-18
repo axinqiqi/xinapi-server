@@ -5,15 +5,18 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import java.util.Arrays;
 import java.util.Date;
 
 /**
  * @author helen
  * @since 2019/10/16
  */
+@Slf4j
 public class JwtUtils {
 
     //常量
@@ -81,9 +84,11 @@ public class JwtUtils {
      */
     public static Long getUserIdByToken(HttpServletRequest request) {
         Cookie[] cookies = request.getCookies();
+        log.info("getUserIdByToken方法获取cookies,cookies是:{}", Arrays.toString(cookies));
         for (Cookie cookie : cookies) {
             if (cookie.getName().equals("token")) {
                 String token = cookie.getValue();
+                log.info("getUserIdByToken方法获取token,token:{}", token);
                 if (!StrUtil.isEmpty(token)) {
                     try {
                         Jws<Claims> claimsJws = Jwts.parser().setSigningKey(SECRET).parseClaimsJws(token);

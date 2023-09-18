@@ -346,6 +346,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
      */
     private LoginUserVO setLoginUser(HttpServletResponse response, User user) {
         String token = JwtUtils.getJwtToken(user.getId(), user.getUserName());
+        log.info("setLoginUser方法获取token,token:{}", token);
         Cookie cookie = new Cookie("token", token);
         cookie.setPath("/");
         response.addCookie(cookie);

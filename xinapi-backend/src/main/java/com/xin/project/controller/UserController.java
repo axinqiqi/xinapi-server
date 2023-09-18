@@ -16,6 +16,7 @@ import com.xin.project.exception.ThrowUtils;
 import com.xin.project.model.dto.user.*;
 import com.xin.project.model.vo.UserVO;
 import com.xin.project.service.UserService;
+import com.xin.project.utils.JwtUtils;
 import com.xin.xinapicommon.model.entity.User;
 import com.xin.xinapicommon.model.enums.UserRoleEnum;
 import com.xin.xinapicommon.model.vo.LoginUserVO;

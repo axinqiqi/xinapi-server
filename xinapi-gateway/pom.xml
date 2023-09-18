@@ -20,15 +20,15 @@
     <dependencies>
         <!--        引入自己配置的api-sdk-starter-->
         <dependency>
-            <groupId>com.xinapi</groupId>
+            <groupId>io.github.axinqiqi.http</groupId>
             <artifactId>xinapi-client-sdk</artifactId>
-            <version>0.0.1</version>
+            <version>1.0.0</version>
         </dependency>
         <!--        引入自己配置公共远程调用接口 -->
         <dependency>
-            <groupId>com.xin</groupId>
+            <groupId>io.github.axinqiqi.http</groupId>
             <artifactId>xinapi-common</artifactId>
-            <version>0.0.1</version>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>
