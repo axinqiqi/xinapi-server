@@ -8,7 +8,7 @@
 >
 > 在线体验地址：[Xin API](http://139.159.192.124/)
 > 
-> 后端开源地址：[https://github.com/axinqiqi/xinapi-server](https://github.com/axinqiqi/xinapi-server)
+> 前端开源地址：[https://github.com/axinqiqi/xinapi-web](https://github.com/axinqiqi/xinapi-web)
 
 
 
@@ -20,11 +20,11 @@
 
 - 首页
 
-![首页](https://github.com/c-z-q/Chen-Api/blob/master/image/首页.png)
+![首页](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E9%A6%96%E9%A1%B5.png)
 
 - 接口详情
 
-  ![接口详情](https://github.com/c-z-q/Chen-Api/blob/master/image/接口详情.png)
+  ![接口详情]([https://github.com/c-z-q/Chen-Api/blob/master/image](https://github.com/axinqiqi/xinapi-server/blob/main/image)/接口详情.png)
 
   
 
