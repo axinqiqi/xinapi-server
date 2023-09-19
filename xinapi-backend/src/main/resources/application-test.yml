@@ -15,8 +15,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/xinapi
-    username: root
-    password: 1874
+    username: #
+    password: #
   # Redis 配置
   # todo 需替换配置
   redis:
