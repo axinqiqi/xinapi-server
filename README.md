@@ -24,7 +24,7 @@
 
 - 接口详情
 
-  ![接口详情]([https://github.com/c-z-q/Chen-Api/blob/master/image](https://github.com/axinqiqi/xinapi-server/blob/main/image)/接口详情.png)
+  ![接口详情](https://github.com/axinqiqi/xinapi-server/blob/main/image/接口详情.png)
 
   
 
