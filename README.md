@@ -17,6 +17,40 @@
 接口平台可以帮助开发者快速接入一些常用的服务，从而提高他们的开发效率，比如随机头像，随机壁纸，随机动漫图片(二次元爱好者专用)等服务，他们是一些应用或者小程序常见的功能，所以提供这些接口可以帮助开发者更加方便地实现这些功能。这些接口也可以让用户在使用应用时获得更加全面的功能和服务，从而提高他们的用户体验
 
 
+## 项目展示
+
+
+- 首页
+
+![首页](https://github.com/axinqiqi/xinapi-server/blob/main/image/首页.png)
+
+- 接口详情
+
+![接口详情](https://github.com/axinqiqi/xinapi-server/blob/main/image/接口详情.png)
+
+- 接口购买
+
+![购买接口](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E6%8E%A5%E5%8F%A3%E8%B4%AD%E4%B9%B0.png)
+
+- 接口支付
+
+![支付接口](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E6%8E%A5%E5%8F%A3%E6%94%AF%E4%BB%98.png)
+
+- 接口管理
+
+![接口管理](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E6%8E%A5%E5%8F%A3%E7%AE%A1%E7%90%86.png)
+
+- 接口分析
+
+![接口分析](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E6%8E%A5%E5%8F%A3%E5%88%86%E6%9E%90.png)
+
+- 用户管理
+
+![用户管理](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86.png)
+
+- 个人中心
+
+![个人中心](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83.png)
 
 
 
@@ -123,43 +157,6 @@ yarn
 npm run start:dev
 ```
 **注意：如果想要体验订单和支付业务并且没有个人云服务器的，需要配置内网穿透才能体验(非必要)**
-
-
-
-## 项目展示
-
-
-- 首页
-
-![首页](https://github.com/axinqiqi/xinapi-server/blob/main/image/首页.png)
-
-- 接口详情
-
-![接口详情](https://github.com/axinqiqi/xinapi-server/blob/main/image/接口详情.png)
-
-- 接口购买
-
-![购买接口](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E6%8E%A5%E5%8F%A3%E8%B4%AD%E4%B9%B0.png)
-
-- 接口支付
-
-![支付接口](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E6%8E%A5%E5%8F%A3%E6%94%AF%E4%BB%98.png)
-
-- 接口管理
-
-![接口管理](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E6%8E%A5%E5%8F%A3%E7%AE%A1%E7%90%86.png)
-
-- 接口分析
-
-![接口分析](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E6%8E%A5%E5%8F%A3%E5%88%86%E6%9E%90.png)
-
-- 用户管理
-
-![用户管理](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86.png)
-
-- 个人中心
-
-![个人中心](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83.png)
 
 
 ## 欢迎贡献
