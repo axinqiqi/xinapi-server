@@ -20,7 +20,7 @@
 
 - 首页
 
-![首页](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E9%A6%96%E9%A1%B5.png)
+![首页](https://github.com/axinqiqi/xinapi-server/blob/main/image/首页.png)
 
 - 接口详情
 
@@ -30,27 +30,27 @@
 
 - 接口购买
 
-![购买接口](https://github.com/c-z-q/Chen-Api/blob/master/image/购买接口.png)
+![购买接口](https://github.com/axinqiqi/xinapi-server/blob/main/image/接口购买.png)
 
 - 接口支付
 
-![支付接口](https://github.com/c-z-q/Chen-Api/blob/master/image/支付接口.png)
+![支付接口](https://github.com/axinqiqi/xinapi-server/blob/main/image/接口支付.png)
 
 - 接口管理
 
-![接口管理](https://github.com/c-z-q/Chen-Api/blob/master/image/接口管理.png)
+![接口管理](https://github.com/axinqiqi/xinapi-server/blob/main/image/接口管理.png)
 
 - 接口分析
 
-![接口分析](https://github.com/c-z-q/Chen-Api/blob/master/image/接口分析.png)
+![接口分析](https://github.com/axinqiqi/xinapi-server/blob/main/image/接口分析.png)
 
 - 用户管理
 
-![用户管理](https://github.com/c-z-q/Chen-Api/blob/master/image/用户管理.png)
+![用户管理](https://github.com/axinqiqi/xinapi-server/blob/main/image/用户管理.png)
 
 - 个人中心
 
-![个人中心](https://github.com/c-z-q/Chen-Api/blob/master/image/个人中心.png)
+![个人中心](https://github.com/axinqiqi/xinapi-server/blob/main/image/个人中心.png)
 
 
 
