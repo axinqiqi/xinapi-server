@@ -7,4 +7,4 @@ dubbo:
     port: -1
   registry:
     id: xinapi-gateway
-    address: nacos://192.168.0.144:8848
+    address: #
