@@ -28,27 +28,27 @@
 
 - 接口购买
 
-![购买接口](https://github.com/axinqiqi/xinapi-server/blob/main/image/接口购买.png)
+![购买接口](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E6%8E%A5%E5%8F%A3%E8%B4%AD%E4%B9%B0.png)
 
 - 接口支付
 
-![支付接口](https://github.com/axinqiqi/xinapi-server/blob/main/image/接口支付.png)
+![支付接口](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E6%8E%A5%E5%8F%A3%E6%94%AF%E4%BB%98.png)
 
 - 接口管理
 
-![接口管理](https://github.com/axinqiqi/xinapi-server/blob/main/image/接口管理.png)
+![接口管理](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E6%8E%A5%E5%8F%A3%E7%AE%A1%E7%90%86.png)
 
 - 接口分析
 
-![接口分析](https://github.com/axinqiqi/xinapi-server/blob/main/image/接口分析.png)
+![接口分析](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E6%8E%A5%E5%8F%A3%E5%88%86%E6%9E%90.png)
 
 - 用户管理
 
-![用户管理](https://github.com/axinqiqi/xinapi-server/blob/main/image/用户管理.png)
+![用户管理](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86.png)
 
 - 个人中心
 
-![个人中心](https://github.com/axinqiqi/xinapi-server/blob/main/image/个人中心.png)
+![个人中心](https://github.com/axinqiqi/xinapi-server/blob/main/image/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83.png)
 
 
 
