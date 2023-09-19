@@ -4,7 +4,7 @@
 spring:
   # 默认 dev 环境
   profiles:
-    active: prod
+    active: test
   # 支持 swagger3
   mvc:
     pathmatch:
@@ -82,15 +82,15 @@ cos:
 
 xinapi:
   client:
-    access-key: c41995df3da2a59c21fa70dc2fafa363
-    secret-key: 23c4830fad46c9e89501b139162e7663
+    access-key: #
+    secret-key: #
 
 alipay:
-  appId: 9021000126627664
-  privateKey: MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC1vo/Y613hOmbRMsBdVyFBEa4mJw2OxYI93TnnnB+eH82cftTqqQYlwgLpH/hSHWBORdtrqRIZg1MdXfJhY6P2ca0INSewpM6EWuAmB3/5oBNw5aYW3jnBC4wd3atz1yhhpsR+V49WC6CSTmhBLNDtAj+dsMLy0/uN9Pk3CzuZQXCJQyjC9Gzc1NuTsg4iYV22rAeyNzyo7ucJUT57DvTdPLuq+dq3d8zwZVj1BoJvZgMyWP1C1qfp2j0dy1xsVQRaRoHRfJ2Z4HlrxQ30F8rF/2Y2HmtWY9iJY4GivK5fV2/gXhvuT7RsB+kPW831vv1IpXn6GRxKsXbPtuCIfd1jAgMBAAECggEAJMh8tJpuVbdMN+rdpAaOZGz/ohklVVAEHCE6JvYiMA6fvpys2xF6fQnXLPebeoMXir/4uMFvOFqr57Wr6KoR9T7slkyry8SPR5pc41WBQTR0utS/2MEBT2DW6vSCTt+s/JaUDj4KdI/F39aeoxI+9rkNxwyPaDYfI4wBJHLRjSKplgpxm2GAqZW6GZM1sJA7WggUuLbDf2kbz8/P8jJE4Oht0rkzVKS24oxQ4sRf+6gvgTcSOGZe1jrfq6C3p/b/Yd4n5PpqMnfb7qxtelcaekmSE1kfsVtwRN2hI8irAlscolNBS8u/6dfC5mpd6nW9mYvWFGlul7SY5jitdFWsAQKBgQDxb94A95QAkEc8oKWl6/fTtiHDPfNGkURclomZwsxFzVuZRlJBhUeTCA3mYAMlxjjab6Wv1tS5xTWAm4JlUWP9gxs4HrqaTCog5pmym6JoOWOGSOKyyLv1O0wAO6UNT+H09Rnn3rAXOke1qqnrkXIMcHxa7GMN+J1AD4cRnLRs4QKBgQDAtPSaP7yGBlS6wWH14a9oc/eb1LM0Wh/6rna9sbuZYmHuTG6pS6n7Y35KdHyrZ9xYcaqW7YpIYUpzgVni3YPgYKKbeKhl323Oqq6sbkuaao/mx6bRXURrypTDxMer9vHyyP25ytEbFEQfqjqaCb/4RPypFb/hNoifOiJ1bM6uwwKBgEmcDraCxSfq1R1B6V8N83AjzmVlZN91+L610twDTR5W/v9bNkbtqKXGRd6gFTWWGs1WTtCukgrVentsbjQPvYmUSF8y1zel0w5W4DNZSgm2vYY6gIt7sfqRipljle3aFg0GEVDlTxC13xkfIFFG9dufC/r4qTagPulCEq8m9MdhAoGBAIFF4wDG2PUfsh9GMyz7JOxxPx2uZjksbF+CQe2nGS4gLYnqhCHVvEYDzGiuFCP4HHzIY6Oz3hwICCXMFDx4VUtkCDE7k9wjMkp9fYf2xYjlC3vJW0L/yjJ1R668hyX5Fv3Dj1HfmL8NrVWAoKdM+xbVUJktGfc+2g/Ws98KCux5AoGAYY8mQ7tGQU7SLRPRA6sDIO/5DNh/RM1MHBDqgD41BE95U3meCXbQvXVzANxrcsrJyc+W8bZd0zzi2JvcO7nZacOKWcyyAJ0BybTZlRCV4kSAPTNxALS/ZQTnVuRzDLT69H8Drlau0T2QvS8GpiZclP/QpbeHfTCUh+RxxmE3bYE=
-  publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAodpgGbevbtiT2wO6I0t49if/gbMuGxD1qjg2uF6b+mT2ZXw7hJ4visYFVDeNjkZKKaEYt1+oX2OnheZmTAj24VdP6y2gdK3tL7yDXTf8XFq22SFfNtjYSM8tiIyMPg7i1jPZl+g64Qd24m0ZbCi5SrSWuuxnnJAJf6kc3DSsVMmRBcdmXSkEBQZeipiO+aayjU+ghT9fMKLVs/o2/AHEIhkUoqpkEaeIDV7AP1eXRa5hewIA1JTDmrNXs6yQ+58n74MqS3XEbNtlxYd20aWf7Z33mM2JD+55rrjSnBKhOlo9O9oxFmOUlxG9fF2zrFg4QU5WGfLTchN/ioEkWoYETwIDAQAB
+  appId: #
+  privateKey: #
+  publicKey: #
   notifyUrl: #
   returnUrl: #
   signType: RSA2
   charset: UTF8
-  serverUrl: https://openapi-sandbox.dl.alipaydev.com/gateway.do
+  serverUrl: #
